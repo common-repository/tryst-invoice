@@ -1,0 +1,22 @@
+{
+    "name": "mbsdevel/tryst-invoice",
+    "description": "Invoice support for Tryst plugin",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "Matteus Barbosa",
+            "email": "matteusbarbosa2@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "classmap": [
+            "admin",
+            "admin/includes/Domain"
+        ],
+        "psr-4": {
+            "Tryst\\": "includes/Tryst",
+            "Tryst\\Domain\\": "includes/Tryst/Domain"
+        }
+    }
+}
